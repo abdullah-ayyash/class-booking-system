@@ -93,13 +93,21 @@ A Laravel-based class booking system featuring **three dashboards**:
     sail up -d
     ```
 
-5. **Run Vite (Frontend Dev Server)**
+5. **Run Migrations & Seed Database**
+
+    ```bash
+    sail artisan migrate --seed
+    ```
+
+    > This will create tables and populate them using your defined seeders.
+
+6. **Run Vite (Frontend Dev Server)**
 
     ```bash
     npm run dev
     ```
 
-6. **Run Laravel Queue Worker**
+7. **Run Laravel Queue Worker**
 
     To process queued jobs like email notifications:
 
@@ -107,11 +115,28 @@ A Laravel-based class booking system featuring **three dashboards**:
     sail artisan queue:work
     ```
 
-7. **Access the Web App**
+8. **Access the Web App**
    Open your browser to:
     ```
     http://localhost
     ```
+
+---
+
+## 🧪 Default Test Accounts
+
+The database seeder creates default users for each role. You can use these credentials to log in and test the dashboards:
+
+| Role          | Email               | Password |
+| ------------- | ------------------- | -------- |
+| 👤 User       | abdullah@mail.com   | password |
+| 👤 User       | omar@mail.com       | password |
+| 👨‍🏫 Instructor | instructor@mail.com | password |
+| 🛠️ Admin      | admin@mail.com      | password |
+
+> All seeded users have the default password: `password`
+
+Once logged in, you’ll be redirected to the dashboard that matches your role (User, Instructor, or Admin).
 
 ---
 
