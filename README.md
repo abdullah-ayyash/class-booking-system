@@ -136,8 +136,8 @@ The database seeder creates default users for each role. You can use these crede
 
 > All seeded users have the default password: `password`
 
-Once logged in, you’ll be redirected to the dashboard that matches your role (User, Instructor, or Admin).
+Once logged in, you'll be redirected to the dashboard that matches your role (User, Instructor, or Admin).
 
 ---
 
-🎉 That’s it! Your Laravel class booking system is now up and running.
+🎉 That's it! Your Laravel class booking system is now up and running.
